@@ -19,6 +19,6 @@ content = [
 with open('voice.xml', 'w') as i:
     i.writelines(content[:1])
     i.writelines(f'<Say voice="alice">{args.host} is experiencing {args.issue}. Please respond.</Say>\n')
-    i.writelines(content[3:4])
+    i.writelines(content[3])
 
 subprocess.run(["systemctl", "restart", "nginx"])
