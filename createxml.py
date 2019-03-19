@@ -16,7 +16,7 @@ content = [
     '</Response>\n'
 ]
 
-#Include voice.xml with the directory name if serving it from a different location
+#Include voice.xml with the directory path if serving it from a different location
 with open('voice.xml', 'w') as i:
     i.writelines(content[:1])
     i.writelines(f'<Say voice="alice">{args.host} is experiencing {args.issue}. Please respond.</Say>\n')
