@@ -13,7 +13,6 @@ content = [
     '<?xml version="1.0" encoding="UTF-8"?>\n',
     '<Response>\n',
     '<Say voice="alice">Yes, this is dog</Say>\n',
-    '<Play>http://demo.twilio.com/docs/classic.mp3</Play>\n',
     '</Response>\n'
 ]
 
